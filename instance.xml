@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://info.slis.indiana.edu/∼dingying/uto.owl#"
+     xml:base="http://info.slis.indiana.edu/∼dingying/uto.owl"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:uto="http://info.slis.indiana.edu/∼dingying/uto.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <!-- Individual representing a Tag -->
+  <rdf:Description rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#Prácticas_y_recursos_para_estudiar">
+    <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"/>
+  </rdf:Description>
+
+  <!-- Individual representing a Tag with related Tag -->
+  <rdf:Description rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#Whatsapp,_Zoom_y_Discord._Google_drive,_Google_meet,_Gmail,_Zoom,_EVA,_Navegadores_(Chrome)">
+    <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"/>
+    <uto:hasRelatedTag rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Prácticas_y_recursos_para_estudiar"/>
+  </rdf:Description>
+
+  <!-- Individual representing a Research Method -->
+  <rdf:Description rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#interview">
+    <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchMethod"/>
+  </rdf:Description>
+
+  <!-- Data Property for Comment -->
+  <rdf:Description rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#hasComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+  </rdf:Description>
+
+  <!-- Data Property for Vote -->
+  <rdf:Description rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#hasVote">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+  </rdf:Description>
+</rdf:RDF>
