@@ -41,7 +41,6 @@
 
     <owl:ObjectProperty rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#hasDate">
         <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"/>
-        <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Date"/>
         <rdfs:label>hasDate</rdfs:label>
     </owl:ObjectProperty>
     
@@ -72,6 +71,7 @@
     <owl:ObjectProperty rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext">
         <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework"/>
         <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"/>
+        <rdfs:comment>hasResearchContext</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -92,7 +92,33 @@
     <owl:ObjectProperty rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#hasTag">
         <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"/>
         <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"/>
+        <rdfs:comment>hasTag</rdfs:comment>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment -->
+
+    <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment">
+        <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Object"/>
+        <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Comment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasParticipant">
+        <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Object"/>
+        <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Participant"/>
+        <rdfs:comment>hasParticipant</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasReportedOn -->
+
+    <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasReportedOn"/>
     
 
 
@@ -100,6 +126,8 @@
 
     <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger">
         <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"/>
+        <rdfs:comment>hasTagger</rdfs:comment>
+        <rdfs:seeAlso>Researcher</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
@@ -107,7 +135,9 @@
     <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework -->
 
     <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework">
+        <rdfs:domain rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"/>
         <rdfs:range rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework"/>
+        <rdfs:seeAlso>hasTheoreticalFramework</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
@@ -156,6 +186,12 @@
     
 
 
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasInterviewID -->
+
+    <owl:DatatypeProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasInterviewID"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -172,15 +208,6 @@
     <owl:Class rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#Comment">
         <rdfs:comment>A comment is a linguistic statement or set of statements added to an object or tag by a tagger during an act of tagging.</rdfs:comment>
         <rdfs:label>Comment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://info.slis.indiana.edu/∼dingying/uto.owl#Date -->
-
-    <owl:Class rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#Date">
-        <rdfs:comment>Date is the time stamp of the tagging behavior. Format is “MmmYY”</rdfs:comment>
-        <rdfs:label>Date</rdfs:label>
     </owl:Class>
     
 
@@ -300,7 +327,6 @@ Research Report A description of how a study was conducted, including results an
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
-        <owl:equivalentClass rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"/>
         <rdfs:comment>A documentation of the work done during an experiment. It includes the findings, called data, collected during an experiment, as well as any observed responses, reactions and results</rdfs:comment>
         <rdfs:comment>Document</rdfs:comment>
         <rdfs:seeAlso>LogBook or DataBook</rdfs:seeAlso>
@@ -375,6 +401,7 @@ include the methods, techniques and instruments used in a research experiment.</
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Hipotesis.doc">
         <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Object"/>
+        <hasResearchContext rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory"/>
         <rdfs:comment>El estudio se centra sobre las prácticas y las representaciones sobre el estudio y la lectura, y no sobre los géneros y soportes reconocidos en el imaginario social como lecturas (libros, novelas, libros de texto, cómics, revistas, periódicos, etc.)
 En el caso de la lectura escolar, nos interesa no solo lo que lxs estudiantes reconocen como lecturas escolares en distintos soportes (fotocopias, pantalla, repositorios, búsquedas en google, lectura de textos, etc.), sino también todo aquellos recursos o atajos que generan para reducir la complejidad, facilitar la comprensión o “traducir” la dificultad.
 El el caso de la lectura extraescolar (la que se hace por gusto, iniciativa propia o alentada por otros/otras significativos/as en nuestras biografías), no discriminamos a priori sobre los diversos géneros o soportes de la lectura, ni tampoco sobre las lecturas reconocidas y no reconocidas como tales.
@@ -387,6 +414,7 @@ La consecuencia epistemológica y metodológica de estas reflexiones, es que en 
     <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc -->
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <rdfs:comment>Se presentan las interrogantes que orientaron las guías de exploración aplicadas a los estudiantes sobre las prácticas de estudio y prácticas de lectura.</rdfs:comment>
     </owl:NamedIndividual>
     <owl:Axiom>
@@ -431,6 +459,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Analíticas">
         <rdf:type rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"/>
+        <sharing:hasComment rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example"/>
         <rdfs:comment>Se listan las categorías y subcategorías analíticas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -440,15 +469,8 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Descriptivas">
         <rdf:type rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"/>
+        <sharing:hasComment rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example"/>
         <rdfs:comment>Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Nov23 -->
-
-    <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Nov23">
-        <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Date"/>
     </owl:NamedIndividual>
     
 
@@ -495,13 +517,29 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
     
 
 
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example -->
+
+    <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example">
+        <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Comment"/>
+        <rdfs:comment>Creo que esta pregunta no apunta a lo que voy a poner pero: Contame algún ejemplo de alguna noticia o información que hayas tenido que que reconstruir a través de varios medios/formatos/plataformas. // Contame cómo profundizás sobre una noticia o tema que te haya interesado en particular.....</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_analitica -->
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_analitica">
-        <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"/>
-        <hasObject rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Analíticas"/>
-        <sharing:hasTagger rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Rosalia"/>
+        <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"/>
         <rdfs:comment>Hay que indagar sobre esto a través de los relatos autobiográficos, preguntar por la escolaridad y la ocupación de los padres y madres, y los modos familiares de relacionarse con la lectura y el conocimiento.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_descriptiva -->
+
+    <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_descriptiva">
+        <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"/>
+        <rdfs:comment>Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC.</rdfs:comment>
     </owl:NamedIndividual>
     
 
