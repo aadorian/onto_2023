@@ -1,0 +1,376 @@
+@prefix : <http://mentor-me.info#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://mentor-me.info#> .
+
+<http://mentor-me.info> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasCreator
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasCreator> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                            rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger> ;
+                                                            rdfs:label "hasCreator" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasDate
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasDate> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                         rdfs:label "hasDate" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasObject
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasObject> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                           rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Object> ;
+                                                           rdfs:label "hasObject" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasRelatedTag
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasRelatedTag> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tag> ;
+                                                               rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Tag> ;
+                                                               rdfs:label "hasRelatedTag" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework> ;
+                                                                    rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                    rdfs:comment "hasResearchContext" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasSource
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasSource> rdf:type owl:ObjectProperty ,
+                                                                    owl:InverseFunctionalProperty ;
+                                                           rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Object> ;
+                                                           rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Source> ;
+                                                           rdfs:label "hasSource" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasTag
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasTag> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                        rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Tag> ;
+                                                        rdfs:comment "hasTag" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment> rdf:type owl:ObjectProperty ;
+                                                                                                              rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Object> ;
+                                                                                                              rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Comment> .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasParticipant
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasParticipant> rdf:type owl:ObjectProperty ;
+                                                                                                                  rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Object> ;
+                                                                                                                  rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#Participant> ;
+                                                                                                                  rdfs:comment "hasParticipant" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger> rdf:type owl:ObjectProperty ;
+                                                                                                             rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                                                                             rdfs:comment "hasTagger" ;
+                                                                                                             rdfs:seeAlso "Researcher" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework> rdf:type owl:ObjectProperty ;
+                                                                                                                           rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                                                                           rdfs:range <http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework> ;
+                                                                                                                           rdfs:seeAlso "hasTheoreticalFramework" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasComment
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasComment> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                            rdfs:range xsd:string .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasCustomDateFormat
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasCustomDateFormat> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://info.slis.indiana.edu/∼dingying/uto.owl#hasCustomDateFormat> ;
+                                                                                   owl:qualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onDataRange xsd:string
+                                                                                 ] ;
+                                                                     rdfs:label "hasCustomDateFormat" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#hasVote
+<http://info.slis.indiana.edu/∼dingying/uto.owl#hasVote> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                         rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Comment
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Comment> rdf:type owl:Class ;
+                                                         rdfs:comment "A comment is a linguistic statement or set of statements added to an object or tag by a tagger during an act of tagging." ;
+                                                         rdfs:label "Comment" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Object
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Object> rdf:type owl:Class ;
+                                                        owl:equivalentClass <http://xmlns.com/foaf/0.1/Document> ;
+                                                        rdfs:comment "Object is the thing which tagger is tagging. It can be bookmarks, photos, videos, musics, books, slides, etc." ;
+                                                        rdfs:label "Object" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Participant
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Participant> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                                                             owl:disjointWith <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                             rdfs:comment "individuals whose physiological and/or behavioral characteristics and responses are the object of study in a research project." ;
+                                                             rdfs:label "Participant" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext
+<http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> rdf:type owl:Class ;
+                                                                 rdfs:comment """Research Problem A problem that someone would like to research; it is the focus of a research investigation.
+Research Question A clear statement in the form of a question of the specific issue that a researcher wishes to analyze.
+Research Report A description of how a study was conducted, including results and conclusions.""" ;
+                                                                 rdfs:label "ResearchContext" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> rdf:type owl:Class ;
+                                                            owl:equivalentClass <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger> ;
+                                                            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                            rdfs:comment "A researcher is an individual who engages in a systematic investigation, study, or inquiry aimed at discovering, interpreting, and expanding knowledge in a specific field or subject area." .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Source
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Source> rdf:type owl:Class ;
+                                                        rdfs:comment "Source is the place where the observation, measurement, and recording of information in a research study is hosted." ;
+                                                        rdfs:label "Source" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://info.slis.indiana.edu/∼dingying/uto.owl#Source> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Source is the place where the observation, measurement, and recording of information in a research study is hosted." ;
+   rdfs:comment <https://github.com/aadorian/onto_2023.git>
+ ] .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Tag
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Tag> rdf:type owl:Class ;
+                                                     rdfs:comment "A tag is a keyword that a user adds to an object." ;
+                                                     rdfs:label "Tag" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                        rdfs:comment "A tagger is a user who tags object." ;
+                                                        rdfs:label "Tagger" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> rdf:type owl:Class ;
+                                                         rdfs:comment "Tagging is the concept which is created to link other concepts. Itself does not have any real meaning" ;
+                                                         rdfs:label "Tagging" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework
+<http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                      owl:disjointWith <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> ,
+                                                                                       <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report> ;
+                                                                      rdfs:comment "Specific procedures used to gather and analyses research data" ;
+                                                                      rdfs:label "ResearchMethod" .
+
+
+###  http://info.slis.indiana.edu/∼dingying/uto.owl#Vote
+<http://info.slis.indiana.edu/∼dingying/uto.owl#Vote> rdf:type owl:Class ;
+                                                      rdfs:comment "Tagging can be viewed as voting. The value of vote can be represented as the number of different taggers tagging a bookmark, the number of users indicating a resource is a favorite, or the number of users viewing a video." ;
+                                                      rdfs:label "Vote" .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
+                                  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                                  rdfs:comment "A FOAF (Friend of a Friend) person is an individual described in the FOAF ontology, a web-based vocabulary providing a way to describe people and the relationships between them in a machine-readable format." .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class ;
+                                     rdfs:comment "A documentation of the work done during an experiment. It includes the findings, called data, collected during an experiment, as well as any observed responses, reactions and results" ,
+                                                  "Document" ;
+                                     rdfs:seeAlso "LogBook or DataBook" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:comment "A FOAF (Friend of a Friend) Agent is a broad term in the FOAF ontology that encompasses individuals, both people and software entities, allowing for the representation of various actors or entities that can be described and linked within the context of the web." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                                                               owl:disjointWith <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report> ;
+                                                                                                               rdfs:comment """Methodology (or Research Methods) A particular procedure or set of procedures. These may
+include the methods, techniques and instruments used in a research experiment.""" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                                                                   rdfs:comment "A description of how a study was conducted, including results and conclusions" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Cami
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Cami> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                                                                        rdfs:comment "Investigadora del Equipo" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory> rdf:type owl:NamedIndividual ,
+                                                                                                                          <http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework> ;
+                                                                                                                 rdfs:comment "The development of social science theory from the inductive analysis of data. This approach is generally used in qualitative research. The specific and detailed observations in the data are studied and understood to such an extent that a theory of more general patterns of behavior can be generated." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Guia_De_Exploración
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Guia_De_Exploración> rdf:type owl:NamedIndividual ,
+                                                                                                                                <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> ;
+                                                                                                                       <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework> <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory> ;
+                                                                                                                       rdfs:comment "Cuestionario exploratorio auto respondido de preguntas abiertas sobre prácticas de estudio y prácticas de lectura. La muestra fue tomanda en el marco del módulo Jóvenes y TICs, del curso Sociedad, Cultura y TICs de la carrera de comunicación de la FIC." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Hipotesis.doc
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Hipotesis.doc> rdf:type owl:NamedIndividual ,
+                                                                                                                          <http://info.slis.indiana.edu/∼dingying/uto.owl#Object> ;
+                                                                                                                 <http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext> <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory> ;
+                                                                                                                 rdfs:comment """El estudio se centra sobre las prácticas y las representaciones sobre el estudio y la lectura, y no sobre los géneros y soportes reconocidos en el imaginario social como lecturas (libros, novelas, libros de texto, cómics, revistas, periódicos, etc.)
+En el caso de la lectura escolar, nos interesa no solo lo que lxs estudiantes reconocen como lecturas escolares en distintos soportes (fotocopias, pantalla, repositorios, búsquedas en google, lectura de textos, etc.), sino también todo aquellos recursos o atajos que generan para reducir la complejidad, facilitar la comprensión o “traducir” la dificultad.
+El el caso de la lectura extraescolar (la que se hace por gusto, iniciativa propia o alentada por otros/otras significativos/as en nuestras biografías), no discriminamos a priori sobre los diversos géneros o soportes de la lectura, ni tampoco sobre las lecturas reconocidas y no reconocidas como tales.
+Las prácticas de lectura no reconocidas como tales (todas las que se despliegan cotidianamente en las redes sociodigitales), son claves para comprender de qué forma inciden los nuevos y múltiples recursos digitales en el acceso y apropiación del conocimiento, la comprensión de las realidades particularidades y generales y el tipo de síntesis cognoscitivas que surgen del cruce cotidiano entre diversos géneros y soportes -reconocidos y no reconocidos- de lectura.
+La consecuencia epistemológica y metodológica de estas reflexiones, es que en el diseño del nuevo instrumento de investigación, debemos evitar que las preguntas o consignas reproduzcan el tipo de compartimentaciones y oposiciones dominantes sobre los géneros y soportes reconocidos del estudio y la lectura.""" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc> rdf:type owl:NamedIndividual ,
+                                                                                                                              <http://xmlns.com/foaf/0.1/Document> ;
+                                                                                                                     rdfs:comment "Se presentan las interrogantes que orientaron las guías de exploración aplicadas a los estudiantes sobre las prácticas de estudio y prácticas de lectura." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Se presentan las interrogantes que orientaron las guías de exploración aplicadas a los estudiantes sobre las prácticas de estudio y prácticas de lectura." ;
+   rdfs:comment """RQ1 - ¿Cuáles son los recursos y estrategias que utilizan los estudiantes avanzados de comunicación para organizar el estudio de forma individual y/o grupal?
+RQ2 ¿Cuáles son las representaciones que poseen sobre la lectura y qué vinculación tienen con sus prácticas de lectura y escritura?;  
+¿Cuáles son sus prácticas de sociabilidad alrededor de la lectura? ¿Con quién o quiénes comparten, y de qué forma?
+¿cómo organizan y relacionan la información que leen?, 
+¿cuáles son los procesos y las estrategias que desarrollan para comprender el significado y reconstruir el sentido de los textos que leen?,  
+¿cómo se vinculan, hibridan, traslapan o resignifican los modos de leer emergentes con los tradicionales?, 
+¿qué tipo de nuevas organizaciones conceptuales produce la lectura fragmentada de diversos textos en soportes digitales?, 
+¿cuáles son las diferencias de las prácticas de lectura en pantalla y en papel?,
+¿cuáles son los contenidos más habituales que circulan y se socializan?, 
+¿qué tipo de continuidades y discontinuidades se producen entre las prácticas digitales y tradicionales en diversos soportes y temporalidades?, 
+¿cuáles son los intereses, inquietudes y motivaciones más recurrentes que organizan las prácticas de lectura?,  
+¿las nuevas prácticas y estrategias de conocimiento que generan la red, son autónomas de su capital cultural y simbólico, por una parte, y del papel de los maestros como dinamizadores y organizadores de dicho conocimiento?"""
+ ] .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interviews
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interviews> rdf:type owl:NamedIndividual ,
+                                                                                                                       <http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext> ;
+                                                                                                              rdfs:comment """A form of data collection in which individuals or groups are questioned orally asking questions of another
+person (a respondent) either face-to-face or by another method""" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Mage
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Mage> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                                                                        rdfs:comment "Investigadora del Equipo" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Analíticas
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Analíticas> rdf:type owl:NamedIndividual ,
+                                                                                                                                         <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> ;
+                                                                                                                                <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment> <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example> ;
+                                                                                                                                rdfs:comment "Se listan las categorías y subcategorías analíticas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Descriptivas
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Descriptivas> rdf:type owl:NamedIndividual ,
+                                                                                                                                           <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> ;
+                                                                                                                                  <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment> <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example> ;
+                                                                                                                                  rdfs:comment "Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Objetivos.doc
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Objetivos.doc> rdf:type owl:NamedIndividual ;
+                                                                                                                 <http://info.slis.indiana.edu/∼dingying/uto.owl#hasSource> <https://github.com/magelacabrera/Pr-cticas_estudio_lectura/tree/main> ;
+                                                                                                                 rdfs:comment "Se presentan los objetivos del proyecto Estudio de las prácticas de lectura en estudiantes de comunicación de la FIC" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Registros_Autobiográficos
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Registros_Autobiográficos> rdf:type owl:NamedIndividual ,
+                                                                                                                                      <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology> ;
+                                                                                                                             rdfs:comment "Lista de archivos individuales que contienen las respuestas de cada estudiante sobre el cuestionario de prácticas de estudio y prácticas de lectura en estudiantes de la licenciatura en Comunicación de la FIC." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#ReporteFinal
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#ReporteFinal> rdf:type owl:NamedIndividual ,
+                                                                                                                         <https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report> ;
+                                                                                                                rdfs:comment <http://info.slis.indiana.edu/∼dingying/uto.owl> .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Rosalia
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Rosalia> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                                                                           rdfs:comment "Investigadora del equipo" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Sole
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Sole> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher> ;
+                                                                                                        rdfs:comment "Investigadora del Equipo" .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example> rdf:type owl:NamedIndividual ,
+                                                                                                                           <http://info.slis.indiana.edu/∼dingying/uto.owl#Comment> ;
+                                                                                                                  rdfs:comment "Creo que esta pregunta no apunta a lo que voy a poner pero: Contame algún ejemplo de alguna noticia o información que hayas tenido que que reconstruir a través de varios medios/formatos/plataformas. // Contame cómo profundizás sobre una noticia o tema que te haya interesado en particular....." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_analitica
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_analitica> rdf:type owl:NamedIndividual ,
+                                                                                                                              <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                                                                                     rdfs:comment "Hay que indagar sobre esto a través de los relatos autobiográficos, preguntar por la escolaridad y la ocupación de los padres y madres, y los modos familiares de relacionarse con la lectura y el conocimiento." .
+
+
+###  https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_descriptiva
+<https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_descriptiva> rdf:type owl:NamedIndividual ,
+                                                                                                                                <http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging> ;
+                                                                                                                       rdfs:comment "Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC." .
+
+
+###  https://github.com/magelacabrera/Pr-cticas_estudio_lectura/tree/main
+<https://github.com/magelacabrera/Pr-cticas_estudio_lectura/tree/main> rdf:type owl:NamedIndividual ,
+                                                                                <http://info.slis.indiana.edu/∼dingying/uto.owl#Source> ;
+                                                                       rdfs:comment "The main branch serves as the central, stable timeline where developers collaborate, integrate changes, and ensure the project's reliability and readiness for deployment." .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

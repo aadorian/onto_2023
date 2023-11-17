@@ -1,0 +1,546 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasCustomDateFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://github.com/aadorian/onto_2023.git"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@value" : "Source is the place where the observation, measurement, and recording of information in a research study is hosted."
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "RQ1 - ¿Cuáles son los recursos y estrategias que utilizan los estudiantes avanzados de comunicación para organizar el estudio de forma individual y/o grupal?\nRQ2 ¿Cuáles son las representaciones que poseen sobre la lectura y qué vinculación tienen con sus prácticas de lectura y escritura?;  \n¿Cuáles son sus prácticas de sociabilidad alrededor de la lectura? ¿Con quién o quiénes comparten, y de qué forma?\n¿cómo organizan y relacionan la información que leen?, \n¿cuáles son los procesos y las estrategias que desarrollan para comprender el significado y reconstruir el sentido de los textos que leen?,  \n¿cómo se vinculan, hibridan, traslapan o resignifican los modos de leer emergentes con los tradicionales?, \n¿qué tipo de nuevas organizaciones conceptuales produce la lectura fragmentada de diversos textos en soportes digitales?, \n¿cuáles son las diferencias de las prácticas de lectura en pantalla y en papel?,\n¿cuáles son los contenidos más habituales que circulan y se socializan?, \n¿qué tipo de continuidades y discontinuidades se producen entre las prácticas digitales y tradicionales en diversos soportes y temporalidades?, \n¿cuáles son los intereses, inquietudes y motivaciones más recurrentes que organizan las prácticas de lectura?,  \n¿las nuevas prácticas y estrategias de conocimiento que generan la red, son autónomas de su capital cultural y simbólico, por una parte, y del papel de los maestros como dinamizadores y organizadores de dicho conocimiento?"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@value" : "Se presentan las interrogantes que orientaron las guías de exploración aplicadas a los estudiantes sobre las prácticas de estudio y prácticas de lectura."
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A comment is a linguistic statement or set of statements added to an object or tag by a tagger during an act of tagging."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Comment"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Object is the thing which tagger is tagging. It can be bookmarks, photos, videos, musics, books, slides, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Object"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Document"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "individuals whose physiological and/or behavioral characteristics and responses are the object of study in a research project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Research Problem A problem that someone would like to research; it is the focus of a research investigation.\nResearch Question A clear statement in the form of a question of the specific issue that a researcher wishes to analyze.\nResearch Report A description of how a study was conducted, including results and conclusions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ResearchContext"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A researcher is an individual who engages in a systematic investigation, study, or inquiry aimed at discovering, interpreting, and expanding knowledge in a specific field or subject area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Source is the place where the observation, measurement, and recording of information in a research study is hosted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Source"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tag is a keyword that a user adds to an object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tag"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tagger is a user who tags object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tagger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tagging is the concept which is created to link other concepts. Itself does not have any real meaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tagging"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specific procedures used to gather and analyses research data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ResearchMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"
+  }, {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Vote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tagging can be viewed as voting. The value of vote can be represented as the number of different taggers tagging a bookmark, the number of users indicating a resource is a favorite, or the number of users viewing a video."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vote"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCreator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasCustomDateFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCustomDateFormat"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDate"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasRelatedTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRelatedTag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "hasResearchContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Source"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "hasTag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tag"
+  } ]
+}, {
+  "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#hasVote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://mentor-me.info",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A FOAF (Friend of a Friend) person is an individual described in the FOAF ontology, a web-based vocabulary providing a way to describe people and the relationships between them in a machine-readable format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A documentation of the work done during an experiment. It includes the findings, called data, collected during an experiment, as well as any observed responses, reactions and results"
+  }, {
+    "@value" : "Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "LogBook or DataBook"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A FOAF (Friend of a Friend) Agent is a broad term in the FOAF ontology that encompasses individuals, both people and software entities, allowing for the representation of various actors or entities that can be described and linked within the context of the web."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Cami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investigadora del Equipo"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The development of social science theory from the inductive analysis of data. This approach is generally used in qualitative research. The specific and detailed observations in the data are studied and understood to such an extent that a theory of more general patterns of behavior can be generated."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Guia_De_Exploración",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cuestionario exploratorio auto respondido de preguntas abiertas sobre prácticas de estudio y prácticas de lectura. La muestra fue tomanda en el marco del módulo Jóvenes y TICs, del curso Sociedad, Cultura y TICs de la carrera de comunicación de la FIC."
+  } ],
+  "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Hipotesis.doc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://info.slis.indiana.edu/∼dingying/uto.owl#hasResearchContext" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Ground_Theory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El estudio se centra sobre las prácticas y las representaciones sobre el estudio y la lectura, y no sobre los géneros y soportes reconocidos en el imaginario social como lecturas (libros, novelas, libros de texto, cómics, revistas, periódicos, etc.)\nEn el caso de la lectura escolar, nos interesa no solo lo que lxs estudiantes reconocen como lecturas escolares en distintos soportes (fotocopias, pantalla, repositorios, búsquedas en google, lectura de textos, etc.), sino también todo aquellos recursos o atajos que generan para reducir la complejidad, facilitar la comprensión o “traducir” la dificultad.\nEl el caso de la lectura extraescolar (la que se hace por gusto, iniciativa propia o alentada por otros/otras significativos/as en nuestras biografías), no discriminamos a priori sobre los diversos géneros o soportes de la lectura, ni tampoco sobre las lecturas reconocidas y no reconocidas como tales.\nLas prácticas de lectura no reconocidas como tales (todas las que se despliegan cotidianamente en las redes sociodigitales), son claves para comprender de qué forma inciden los nuevos y múltiples recursos digitales en el acceso y apropiación del conocimiento, la comprensión de las realidades particularidades y generales y el tipo de síntesis cognoscitivas que surgen del cruce cotidiano entre diversos géneros y soportes -reconocidos y no reconocidos- de lectura.\nLa consecuencia epistemológica y metodológica de estas reflexiones, es que en el diseño del nuevo instrumento de investigación, debemos evitar que las preguntas o consignas reproduzcan el tipo de compartimentaciones y oposiciones dominantes sobre los géneros y soportes reconocidos del estudio y la lectura."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interrogantes.doc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Se presentan las interrogantes que orientaron las guías de exploración aplicadas a los estudiantes sobre las prácticas de estudio y prácticas de lectura."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Interviews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A form of data collection in which individuals or groups are questioned orally asking questions of another\nperson (a respondent) either face-to-face or by another method"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Mage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investigadora del Equipo"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Analíticas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Se listan las categorías y subcategorías analíticas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC."
+  } ],
+  "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Manual_Categorias_Descriptivas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC."
+  } ],
+  "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Methodology (or Research Methods) A particular procedure or set of procedures. These may\ninclude the methods, techniques and instruments used in a research experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Objetivos.doc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://info.slis.indiana.edu/∼dingying/uto.owl#hasSource" : [ {
+    "@id" : "https://github.com/magelacabrera/Pr-cticas_estudio_lectura/tree/main"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Se presentan los objetivos del proyecto Estudio de las prácticas de lectura en estudiantes de comunicación de la FIC"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Registros_Autobiográficos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lista de archivos individuales que contienen las respuestas de cada estudiante sobre el cuestionario de prácticas de estudio y prácticas de lectura en estudiantes de la licenciatura en Comunicación de la FIC."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#ReporteFinal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of how a study was conducted, including results and conclusions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Rosalia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investigadora del equipo"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Sole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investigadora del Equipo"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#coment_example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Creo que esta pregunta no apunta a lo que voy a poner pero: Contame algún ejemplo de alguna noticia o información que hayas tenido que que reconstruir a través de varios medios/formatos/plataformas. // Contame cómo profundizás sobre una noticia o tema que te haya interesado en particular....."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Comment"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "hasParticipant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Participant"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "hasTagger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "Researcher"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTheoreticalFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "hasTheoreticalFramework"
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_analitica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hay que indagar sobre esto a través de los relatos autobiográficos, preguntar por la escolaridad y la ocupación de los padres y madres, y los modos familiares de relacionarse con la lectura y el conocimiento."
+  } ]
+}, {
+  "@id" : "https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#tag_cat_descriptiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Tagging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Se listan las categorías y subcategorías descriptivas para los registros autobiográficos del cuestionario sobre prácticas de estudio y prácticas de lectura de estudiantes de la licenciatura en comunicación de la FIC."
+  } ]
+}, {
+  "@id" : "https://github.com/magelacabrera/Pr-cticas_estudio_lectura/tree/main",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://info.slis.indiana.edu/∼dingying/uto.owl#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The main branch serves as the central, stable timeline where developers collaborate, integrate changes, and ensure the project's reliability and readiness for deployment."
+  } ]
+} ]

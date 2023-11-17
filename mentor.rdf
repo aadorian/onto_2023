@@ -289,6 +289,8 @@ Research Report A description of how a study was conducted, including results an
 
     <owl:Class rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#TheoreticalFramework">
         <rdfs:subClassOf rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"/>
+        <owl:disjointWith rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology"/>
+        <owl:disjointWith rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"/>
         <rdfs:comment>Specific procedures used to gather and analyses research data</rdfs:comment>
         <rdfs:label>ResearchMethod</rdfs:label>
     </owl:Class>
@@ -336,6 +338,7 @@ Research Report A description of how a study was conducted, including results an
 
     <owl:Class rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Methodology">
         <rdfs:subClassOf rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#ResearchContext"/>
+        <owl:disjointWith rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"/>
         <rdfs:comment>Methodology (or Research Methods) A particular procedure or set of procedures. These may
 include the methods, techniques and instruments used in a research experiment.</rdfs:comment>
     </owl:Class>
@@ -491,7 +494,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#ReporteFinal">
         <rdf:type rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"/>
-        <rdfs:comment rdf:resource=""/>
+        <rdfs:comment rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl"/>
     </owl:NamedIndividual>
     
 
