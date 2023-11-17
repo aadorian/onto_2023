@@ -2,11 +2,6 @@
 
 Validation of the Ontology 
 
-
-
-
-
-
 ## Widoco
 
 https://github.com/dgarijo/Widoco/releases
