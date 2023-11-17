@@ -116,12 +116,6 @@
     
 
 
-    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasReportedOn -->
-
-    <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasReportedOn"/>
-    
-
-
     <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger -->
 
     <owl:ObjectProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasTagger">
@@ -186,12 +180,6 @@
     
 
 
-    <!-- https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasInterviewID -->
-
-    <owl:DatatypeProperty rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#hasInterviewID"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -249,6 +237,7 @@ Research Report A description of how a study was conducted, including results an
     <owl:Class rdf:about="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher">
         <owl:equivalentClass rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Tagger"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>A researcher is an individual who engages in a systematic investigation, study, or inquiry aimed at discovering, interpreting, and expanding knowledge in a specific field or subject area.</rdfs:comment>
     </owl:Class>
     
 
@@ -259,6 +248,12 @@ Research Report A description of how a study was conducted, including results an
         <rdfs:comment>Source is the place where the observation, measurement, and recording of information in a research study is hosted.</rdfs:comment>
         <rdfs:label>Source</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Source"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Source is the place where the observation, measurement, and recording of information in a research study is hosted.</owl:annotatedTarget>
+        <rdfs:comment rdf:resource="https://github.com/aadorian/onto_2023.git"/>
+    </owl:Axiom>
     
 
 
@@ -309,17 +304,12 @@ Research Report A description of how a study was conducted, including results an
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment>A FOAF (Friend of a Friend) person is an individual described in the FOAF ontology, a web-based vocabulary providing a way to describe people and the relationships between them in a machine-readable format.</rdfs:comment>
     </owl:Class>
     
 
@@ -336,7 +326,9 @@ Research Report A description of how a study was conducted, including results an
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:comment>A FOAF (Friend of a Friend) Agent is a broad term in the FOAF ontology that encompasses individuals, both people and software entities, allowing for the representation of various actors or entities that can be described and linked within the context of the web.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -374,6 +366,7 @@ include the methods, techniques and instruments used in a research experiment.</
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Cami">
         <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"/>
+        <rdfs:comment>Investigadora del Equipo</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -451,6 +444,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Mage">
         <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"/>
+        <rdfs:comment>Investigadora del Equipo</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -497,6 +491,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#ReporteFinal">
         <rdf:type rdf:resource="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Research_Report"/>
+        <rdfs:comment rdf:resource=""/>
     </owl:NamedIndividual>
     
 
@@ -505,6 +500,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Rosalia">
         <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"/>
+        <rdfs:comment>Investigadora del equipo</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -513,6 +509,7 @@ person (a respondent) either face-to-face or by another method</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://docs.google.com/document/d/1JBw_aQiZJq5BDaGPQrc2S-tf9FxJrhR7W99ZFxZ9AlM/edit?usp=sharing#Sole">
         <rdf:type rdf:resource="http://info.slis.indiana.edu/∼dingying/uto.owl#Researcher"/>
+        <rdfs:comment>Investigadora del Equipo</rdfs:comment>
     </owl:NamedIndividual>
     
 
