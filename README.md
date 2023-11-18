@@ -4,10 +4,11 @@ Video Presentación
 
 https://youtu.be/hV7zkdVvXjk
 
+# Documentación 
 
-## Widoco
+https://www.overleaf.com/8518561658kxjypxrmysky#91428a
 
-https://github.com/dgarijo/Widoco/releases
+
 
 # Ejecutar Documentación.
 ```
@@ -17,3 +18,7 @@ https://github.com/dgarijo/Widoco/releases
 # Extra 
 Plugin https://github.com/aadorian/plugin/commit/7bbe34a02f5347448087993eba07af01b044271d
 
+
+# Widoco
+
+https://github.com/dgarijo/Widoco/releases
