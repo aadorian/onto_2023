@@ -1,10 +1,12 @@
-# onto_2023
+# Ing. en Ontologías
 
 Video Presentación 
 
 https://youtu.be/hV7zkdVvXjk
 
 # Documentación 
+
+https://github.com/aadorian/onto_2023/blob/main/Doc_Final.pdf
 
 https://www.overleaf.com/8518561658kxjypxrmysky#91428a
 
